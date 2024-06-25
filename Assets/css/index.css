@@ -1,16 +1,12 @@
 :root{
     --primary : #11023d;
 }
-.navbar {
-    background-color:#11023d; 
-    background-color: rgba(22, 1, 54, 0.8);
+.navbar{
+    background-color:#10013b; 
+    /*background-color: rgba(22, 1, 54, 0.8);*/
 
 }
 
-.nav-link {
-    
-    color: rgba(255, 255, 255, 1);
-}
 .carousel-item img {
     max-height: calc(108vh - 50px); /* 56px adalah tinggi navbar */
     object-fit: cover;
