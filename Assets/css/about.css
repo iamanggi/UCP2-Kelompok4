@@ -9,6 +9,16 @@ body {
   font-size: 1.1rem;
 }
 
+.carousel-item img {
+  max-height: 731px; /* Mengatur tinggi maksimum gambar agar sesuai dengan lebar viewport */
+  width: auto; /* Lebar gambar menyesuaikan dengan tinggi maksimum */
+  margin: auto; /* Posisi gambar di tengah */
+  display: block; /* Membuat gambar menjadi blok untuk mengatur margin secara tepat */
+}
+
+
+
+
 /* Video Section */
 .video-container {
   position: relative;
@@ -42,12 +52,16 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 300px;
+  height: 100%;
+  
 }
 
 .card-item img {
   transition: transform 0.3s ease;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  max-height:260px; 
+
 }
 
 .card-item:hover img {
@@ -81,3 +95,7 @@ body {
   margin-bottom: 1rem;
   border-radius: 10px;
 }
+
+
+
+
