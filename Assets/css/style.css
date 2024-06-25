@@ -8,71 +8,23 @@
     z-index: 1000; /* Ensure navbar is on top */
 }
 
+.navbar-nav .nav-item {
+    margin-right: 60px; /* Adjust the value as needed */
+}
+.navbar-search {
+    margin-right: 10px; /* Adjust the value as needed */
+    margin-left: 120px;
+}
+.navbar-search input {
+    background-color: white; /* White background for search input */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
 .container {
     padding-left: 15px; /* Adjust left padding */
     padding-right: 15px; /* Adjust right padding */
-}
-
-.carousel {
-    margin-top: 60px; /* Compensate for the height of the navbar */
-}
-
-.carousel-item img {
-    max-height: calc(100vh - 60px); /* Ensure the carousel fits within the viewport */
-    object-fit: cover;
-}
-
-/* Footer section */
-.footer-section {
-    background-color: var(--primary);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-section .socials {
-    margin-bottom: 15px;
-}
-
-.footer-section .socials a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.footer-section .socials a:hover {
-    color: #f39c12; /* Warna hover untuk ikon sosial */
-}
-
-.footer-section .links {
-    margin-bottom: 15px;
-}
-
-.footer-section .links a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-section .links a:hover {
-    color: #f39c12; /* Warna hover untuk link */
-}
-
-.footer-section .credit {
-    margin-top: 10px;
-}
-
-.footer-section .credit a {
-    color: #f39c12; /* Warna link kredit */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-section .credit a:hover {
-    color: white; /* Warna hover untuk link kredit */
 }
 
 
