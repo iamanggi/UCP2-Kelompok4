@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prak PDW</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <style>
+        .category-options {
+            margin-top: 20px;
+        }
+        .category-options .row {
+            margin-bottom: 10px;
+        }
+        .category-options label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-navi fixed-top">
+        <div class="container">
+            <img class="navbar-logo" src="../Assets/images/logo2.jpg" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" style="color: white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html" style="color: white">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/form.html" style="color: white">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/contact.html" style="color: white">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form class="card" id="registrationForm">
+        <div class="card-body">
+            <h2>FORM PENDAFTARAN</h2>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="nama lengkap" required >
+    
+            <label for="no_hp">No. Telepon:</label>
+            <input type="tel" id="no_hp" name="no_hp" required>
+    
+            <label for="Alamat">Alamat:</label>
+            <textarea id="Alamat" name="Alamat" required></textarea>
+
+            <div class="category-options">
+                <label>Pilih Paket:</label>
+                <div class="row">
+                    <div class="col-6">
+                        <label>
+                            <input type="checkbox" name="category" value="Seru"> Paket Seru 
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label>
+                            <input type="checkbox" name="category" value="Ambis"> Paket Ambis
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label>
+                            <input type="checkbox" name="category" value="Bubar"> Paket Bubar 
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label>
+                            <input type="checkbox" name="category" value="Solo"> Paket Solo 
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Submit"> 
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

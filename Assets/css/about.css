@@ -10,14 +10,11 @@ body {
 }
 
 .carousel-item img {
-  max-height: 731px; /* Mengatur tinggi maksimum gambar agar sesuai dengan lebar viewport */
+  max-height: 741px; /* Mengatur tinggi maksimum gambar agar sesuai dengan lebar viewport */
   width: auto; /* Lebar gambar menyesuaikan dengan tinggi maksimum */
   margin: auto; /* Posisi gambar di tengah */
   display: block; /* Membuat gambar menjadi blok untuk mengatur margin secara tepat */
 }
-
-
-
 
 /* Video Section */
 .video-container {
@@ -96,6 +93,106 @@ body {
   border-radius: 10px;
 }
 
+.carousel-item {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the entire area without stretching */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #fff;
+  text-align: left;
+  padding: 50px;
+}
+
+.carousel-caption h5 {
+  font-size: 4rem; /* Adjust the font size as needed */
+  margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 1.3rem; /* Adjust the font size as needed */
+}
 
 
+:root {
+  --primary: #11023d;
+}
 
+.navbar {
+  background-color: #10013b; 
+  height: 60px;
+  z-index: 1000; /* Ensure navbar is on top */
+}
+
+.carousel {
+  margin-top: 60px; /* Compensate for the height of the navbar */
+}
+
+.carousel-item img {
+  max-height: calc(100vh - 60px); /* Ensure the carousel fits within the viewport */
+  object-fit: cover;
+}
+
+/* Footer section */
+.footer-section {
+  background-color: var(--primary);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-section .socials {
+  margin-bottom: 15px;
+}
+
+.footer-section .socials a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-section .socials a:hover {
+  color: #f39c12; /* Warna hover untuk ikon sosial */
+}
+
+.footer-section .links {
+  margin-bottom: 15px;
+}
+
+.footer-section .links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section .links a:hover {
+  color: #f39c12; /* Warna hover untuk link */
+}
+
+.footer-section .credit {
+  margin-top: 10px;
+}
+
+.footer-section .credit a {
+  color: #f39c12; /* Warna link kredit */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section .credit a:hover {
+  color: white; /* Warna hover untuk link kredit */
+}

@@ -1,0 +1,177 @@
+:root {
+    --primary: #11023d;
+}
+
+.navbar {
+    background-color: #10013b; 
+    height: 60px;
+    z-index: 1000; /* Ensure navbar is on top */
+}
+
+.container {
+    padding-left: 15px; /* Adjust left padding */
+    padding-right: 15px; /* Adjust right padding */
+}
+
+.carousel {
+    margin-top: 60px; /* Compensate for the height of the navbar */
+}
+
+.carousel-item img {
+    max-height: calc(100vh - 60px); /* Ensure the carousel fits within the viewport */
+    object-fit: cover;
+}
+
+/* Footer section */
+.footer-section {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-section .socials {
+    margin-bottom: 15px;
+}
+
+.footer-section .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-section .socials a:hover {
+    color: #f39c12; /* Warna hover untuk ikon sosial */
+}
+
+.footer-section .links {
+    margin-bottom: 15px;
+}
+
+.footer-section .links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section .links a:hover {
+    color: #f39c12; /* Warna hover untuk link */
+}
+
+.footer-section .credit {
+    margin-top: 10px;
+}
+
+.footer-section .credit a {
+    color: #f39c12; /* Warna link kredit */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section .credit a:hover {
+    color: white; /* Warna hover untuk link kredit */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Mengatur elemen menjadi kolom */
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.card-body h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-body label {
+    width: 100%; /* Mengatur lebar label menjadi 100% */
+    margin-bottom: 8px;
+    font-weight: 450;
+}
+
+.card-body input[type="text"],
+.card-body input[type="email"],
+.card-body input[type="tel"],
+.card-body input[type="date"],
+.card-body select,
+.card-body textarea {
+    width: 100%; /* Mengatur lebar input menjadi 100% */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+
+.card-body textarea {
+    height: 150px; /* Mengatur tinggi textarea */
+}
+
+.card-body .radio-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-body input[type="radio"] {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.card-body label.radio-label {
+    margin-right: 20px;
+}
+
+.card-body input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.card-body input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.category-options {
+    margin-top: 20px;
+}
+
+.category-options .row {
+    margin-bottom: 10px;
+}
+
+.category-options label {
+    margin-right: 10px;
+}
