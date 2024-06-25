@@ -85,6 +85,54 @@ body {
   color: #6c757d;
 }
 
+
+
+
+/* Card Title Styling */
+.card-title {
+  font-size: 1.5rem; 
+  font-family:Broadway;
+  color: #034e98; 
+  text-align: center; 
+  margin-bottom: 0.75rem; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+
+/* Additional Hover Effect for Card */
+.card-item:hover .card-title {
+  color: #ccb925; /* Change color on hover */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a slight text shadow */
+}
+
+
+
+
+/* Icons Styling */
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  
+}
+
+.icons span {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-family: 'Courier New';
+}
+
+.icons i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+
+
+
 /* Img About */
 .img-fluid {
   width: 100%;
