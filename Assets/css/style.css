@@ -5,30 +5,142 @@
 .navbar {
     background-color: #10013b; 
     height: 60px;
-    z-index: 1000; /* Ensure navbar is on top */
+    z-index: 1000; 
 }
 
 .navbar-nav .nav-item {
-    margin-right: 60px; /* Adjust the value as needed */
+    margin-right: 60px; 
 }
 .navbar-search {
-    margin-right: 10px; /* Adjust the value as needed */
+    margin-right: 10px; 
     margin-left: 120px;
 }
 .navbar-search input {
-    background-color: white; /* White background for search input */
+    background-color: white; 
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 5px 10px;
 }
 
-.container {
-    padding-left: 15px; /* Adjust left padding */
-    padding-right: 15px; /* Adjust right padding */
+/* Style untuk container video */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: block; 
+    margin-bottom: 3rem; 
+}
+
+/* Style untuk video */
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+/* Overlay untuk efek gelap */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Container untuk teks */
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; 
+}
+
+/* Style untuk teks video */
+.video-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.about-img img {
+    border-radius: 10px;
+    margin-right: 20px; 
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.text-content h2 {
+    font-weight: bold; 
+}
+
+/* Footer section */
+.footer-section {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-section .socials {
+    margin-bottom: 15px;
+}
+
+.footer-section .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-section .socials a:hover {
+    color: #36bfff; 
+}
+
+.footer-section .links {
+    margin-bottom: 15px;
+}
+
+.footer-section .links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section .links a:hover {
+    color: #36bfff; 
+}
+
+.footer-section .credit {
+    margin-top: 10px;
+}
+
+.footer-section .credit a {
+    color: #36bfff; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section .credit a:hover {
+    color: white; 
 }
 
 
-body {
+/*body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     margin: 0;
@@ -37,7 +149,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+}*/
 
 .card {
     width: 80%;
