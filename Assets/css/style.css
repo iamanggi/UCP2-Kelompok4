@@ -16,9 +16,9 @@
     margin-left: 120px;
 }
 .navbar-search input {
-    background-color: white; 
+    background-color: rgba(255, 255, 255, 0.593); 
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.593);
     padding: 5px 10px;
 }
 
@@ -73,6 +73,8 @@
     display: flex;
     align-items: center; 
     justify-content: center; 
+    width: 100%;
+    height: 100%;
 }
 
 .about-img img {
@@ -85,6 +87,69 @@
 .text-content h2 {
     font-weight: bold; 
 }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card h3 {
+    margin: 15px 0 10px;
+  }
+  
+  .card p {
+    margin: 0;
+  }
+
+  .card-container-2 {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .card-content {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #10013b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #5f9cec;
+  }
 
 /* Footer section */
 .footer-section {
