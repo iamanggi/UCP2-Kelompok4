@@ -89,54 +89,50 @@
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    width: 80%;
-    max-width: 1200px;
-  }
-  
-  .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .card img {
-    max-width: 100%;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  .card h3 {
-    margin: 15px 0 10px;
-  }
-  
-  .card p {
-    margin: 0;
-  }
-
-  .card-container-2 {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 600px;
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 50vh;
+    gap: 20px;
+    padding: 20px;
   }
-  .card-content {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+  .card {
+    background-color: #10013b55;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease;
   }
-  
+  .card:hover {
+    transform: scale(1.10);
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .card h3 {
+    margin: 10px 0;
+  }
+  .card-container-2 {
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    background: #b1bbe475;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 100%;
+    padding: 30px;
+  }
+  .card-container-2 .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #10013b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }  
   .button {
     display: inline-block;
     padding: 10px 20px;
