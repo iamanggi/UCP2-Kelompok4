@@ -5,48 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prak PDW</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../Assets/css/contact.css">
     <link rel="stylesheet" href="../Assets/css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-navi fixed-top">
-        <div class="container">
-          <img class="navbar-logo" src="../Assets/images/logo2.jpg" />
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html" style="color: white">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../about.html" style="color: white">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../Pages/form.html" style="color: white">Form</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Pages/contact.html" style="color: white">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-    <form class="card" id="registrationForm">
-        <div class="card-body">
-            <h2>Kritik & Saran</h2>
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" placeholder="nama lengkap" required >
-    
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="email" required>
-    
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="masukkan kritik dan saran" required></textarea>
-    
-            <input type="submit" value="Submit"> 
+  <nav class="navbar navbar-expand-md navbar-light bg-navi fixed-top">
+    <div class="container">
+        <img class="navbar-logo" src="../Assets/images/logo2.jpg" />
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-5" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-around w-100">
+                <li class="nav-item navbar-search">
+                    <form class="d-flex">
+                        <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" style="color : white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" style="color: white;">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./form.html" style="color: white;">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html" style="color: white;">Contact</a>
+                </li>
+            </ul>
         </div>
-    </form>
+    </div>
+</nav>
+
+  <form class="carddd" id="kritiksaranForm">
+      <div class="card-body">
+          <h2>Kritik & Saran</h2>
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" placeholder="nama lengkap" required >
+  
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="email" required>
+  
+          <label for="message">Message:</label>
+          <input type="message" name="message" id="message" required>
+  
+          <input type="submit" onclick="validateForm()" value="Submit"> 
+      </div>
+  </form>
+
+  <section class="contact-section">
+    <div class="contact-info">
+        <h2>PONDOK IT</h2>
+        <p>Tingkatkan skill IT-mu dengan bimbingan belajar yang terdepan. Jadilah yang terbaik dalam setiap langkahmu!</p>
+
+        <h4>Phone</h4>
+        <p><a href="https://wa.me/081547699824">Buka obrolan di WhatsApp</a></p>
+
+        <h4>Email</h4>
+        <p><a href="mailto:pondokIT12@gmail.com">pondokIT12@gmail.com</a></p>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15811.206111282216!2d110.311561524868!3d-7.810823251485918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af80f28426fb3%3A0x72412294845ee8b4!2sUniversitas%20Muhammadiyah%20Yogyakarta!5e0!3m2!1sid!2sid!4v1719505003882!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+    <section>
+      <footer id="footer" class="footer-section">
+        <div class="socials">
+          <a href="./index.html">
+            <i data-feather="instagram"></i>
+          </a>
+          <a href="./index.html">
+            <i data-feather="mail"></i>
+          </a>
+        </div>
+    
+        <div class="links">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./Pages/form.html">Form</a>
+          <a href="./Pages/contact.html">Contact</a>
+        </div>
+    
+        <div class="credit">
+          <p>Created By <a href="">@kelompok_C4</a> | &copy; 2024.</p>
+        </div>
+      </footer>
+    </section>
+
+    <script>
+      function validateForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        if (name == "" || email == "" || message == "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Harap isi semua kolom!',
+            });
+        } else {
+            Swal.fire({
+                title: 'Terima Kasih',
+                text: 'Kritik dan Saran Anda Telah Terkirim',
+                icon: 'success',
+            });
+        }
+
+        // Menghentikan event default
+        event.preventDefault();
+    }
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      feather.replace();
+    </script>
 </body>
 </html>
