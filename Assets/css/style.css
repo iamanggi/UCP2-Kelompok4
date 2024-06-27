@@ -90,6 +90,7 @@
 }
 
 .card-container {
+<<<<<<< HEAD
     display: flex;
     grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
     gap: 20px;
@@ -139,18 +140,60 @@
     padding: 20px;
     max-width: 600px;
     width: 100%;
+=======
+>>>>>>> c127b8383fc106c9c55edd16e26e44761788e4e8
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 50vh;
+    gap: 20px;
+    padding: 20px;
   }
+<<<<<<< HEAD
   
   .card-content {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
+=======
+  .card {
+    background-color: #10013b55;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+>>>>>>> c127b8383fc106c9c55edd16e26e44761788e4e8
   }
-  
+  .card:hover {
+    transform: scale(1.10);
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .card h3 {
+    margin: 10px 0;
+  }
+  .card-container-2 {
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    background: #b1bbe475;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 100%;
+    padding: 30px;
+  }
+  .card-container-2 .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #10013b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }  
   .button {
     display: inline-block;
     padding: 10px 20px;
