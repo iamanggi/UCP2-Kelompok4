@@ -5,9 +5,31 @@ body {
   padding: 0;
 }
 
-.navbar-nav .nav-link {
-  font-size: 1.1rem;
+:root {
+  --primary: #11023d;
 }
+
+.navbar {
+  background-color: #10013b; 
+  height: 60px;
+  z-index: 1000; 
+}
+
+.collapse{
+  margin-left: 4rem;
+}
+
+.navbar-search {
+  margin-right: 10px; 
+  margin-left: 90px;
+}
+.navbar-search input {
+  background-color: rgba(255, 255, 255, 0.593); 
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.593);
+  padding: 5px 10px;
+}
+
 
 .carousel-item img {
   max-height: 741px; /* Mengatur tinggi maksimum gambar agar sesuai dengan lebar viewport */
@@ -159,6 +181,7 @@ body {
   font-size: 1.3rem;
 }
 
+<<<<<<< HEAD
 /* Root */
 :root {
   --primary: #11023d;
@@ -168,6 +191,9 @@ body {
   background-color: #10013b;
   height: 60px;
   z-index: 1000;
+=======
+
+>>>>>>> 88e5fc2c56d2ab18f4ab3a017a52bb4acb919845
 
   .carousel {
     margin-top: 60px;
