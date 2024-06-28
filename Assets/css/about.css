@@ -16,21 +16,7 @@ body {
   display: block; /* Membuat gambar menjadi blok untuk mengatur margin secara tepat */
 }
 
-/* Video Section */
-.video-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-}
-
-.video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Card About */
+/* Card Section */
 #cardAbout {
   display: flex;
   justify-content: center;
@@ -43,22 +29,20 @@ body {
 .card-item {
   position: relative;
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 300px;
   height: 100%;
-  
 }
 
 .card-item img {
   transition: transform 0.3s ease;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  max-height:260px; 
-
+  max-height: 260px;
 }
 
 .card-item:hover img {
@@ -75,38 +59,19 @@ body {
 }
 
 .card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #034e98;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.card-text {
-  font-size: 1rem;
-  color: #6c757d;
-}
-
-
-
-
-/* Card Title Styling */
-.card-title {
-  font-size: 1.5rem; 
-  font-family:Broadway;
-  color: #034e98; 
-  text-align: center; 
-  margin-bottom: 0.75rem; 
-  text-transform: uppercase; 
-  letter-spacing: 1px; 
-}
-
-/* Additional Hover Effect for Card */
+/* Card Hover */
 .card-item:hover .card-title {
-  color: #ccb925; /* Change color on hover */
+  color: rgb(183, 128, 39); /* Change color on hover */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a slight text shadow */
 }
-
-
-
 
 /* Icons Styling */
 .icons {
@@ -115,14 +80,10 @@ body {
   justify-content: space-between;
   gap: 0.5rem;
   margin-top: 1rem;
-  
 }
 
 .icons span {
-  display: flex;
-  align-items: center;
   font-size: 0.9rem;
-  font-family: 'Courier New';
 }
 
 .icons i {
@@ -130,10 +91,36 @@ body {
   font-size: 1rem;
 }
 
+/* Modal Styling */
+.modal-content {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #000;
+}
 
+.modal-header {
+  background-color: #11023d;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
+.modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
-/* Img About */
+.modal-body {
+  font-size: 1.2rem;
+}
+
+.modal-footer {
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Img Section */
 .img-fluid {
   width: 100%;
   height: auto;
@@ -143,13 +130,13 @@ body {
 
 .carousel-item {
   position: relative;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
 }
 
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure image covers the entire area without stretching */
+  object-fit: cover;
 }
 
 .carousel-caption {
@@ -164,83 +151,83 @@ body {
 }
 
 .carousel-caption h5 {
-  font-size: 4rem; /* Adjust the font size as needed */
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
 .carousel-caption p {
-  font-size: 1.3rem; /* Adjust the font size as needed */
+  font-size: 1.3rem;
 }
 
-
+/* Root */
 :root {
   --primary: #11023d;
 }
 
 .navbar {
-  background-color: #10013b; 
+  background-color: #10013b;
   height: 60px;
-  z-index: 1000; /* Ensure navbar is on top */
-}
+  z-index: 1000;
 
-.carousel {
-  margin-top: 60px; /* Compensate for the height of the navbar */
-}
+  .carousel {
+    margin-top: 60px;
+  }
 
-.carousel-item img {
-  max-height: calc(100vh - 60px); /* Ensure the carousel fits within the viewport */
-  object-fit: cover;
-}
+  .carousel-item img {
+    max-height: calc(100vh - 60px);
+    object-fit: cover;
+  }
 
-/* Footer section */
-.footer-section {
-  background-color: var(--primary);
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
+  /* Footer section */
+  .footer-section {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
 
-.footer-section .socials {
-  margin-bottom: 15px;
-}
+  .footer-section .socials {
+    margin-bottom: 15px;
+  }
 
-.footer-section .socials a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 24px;
-  transition: color 0.3s;
-}
+  .footer-section .socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
 
-.footer-section .socials a:hover {
-  color: #f39c12; /* Warna hover untuk ikon sosial */
-}
+  .footer-section .socials a:hover {
+    color: #f39c12; /* Warna hover untuk ikon sosial */
+  }
 
-.footer-section .links {
-  margin-bottom: 15px;
-}
+  .footer-section .links {
+    margin-bottom: 15px;
+  }
 
-.footer-section .links a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+  .footer-section .links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
-.footer-section .links a:hover {
-  color: #f39c12; /* Warna hover untuk link */
-}
+  .footer-section .links a:hover {
+    color: #f39c12; /* Warna hover untuk link */
+  }
 
-.footer-section .credit {
-  margin-top: 10px;
-}
+  .footer-section .credit {
+    margin-top: 10px;
+  }
 
-.footer-section .credit a {
-  color: #f39c12; /* Warna link kredit */
-  text-decoration: none;
-  transition: color 0.3s;
-}
+  .footer-section .credit a {
+    color: #f39c12; /* Warna link kredit */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
-.footer-section .credit a:hover {
-  color: white; /* Warna hover untuk link kredit */
+  .footer-section .credit a:hover {
+    color: white; /* Warna hover untuk link kredit */
+  }
 }
