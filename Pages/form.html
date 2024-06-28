@@ -5,88 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prak PDW</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../Assets/css/contact.css">
     <link rel="stylesheet" href="../Assets/css/style.css">
-    <style>
-        .category-options {
-            margin-top: 20px;
-        }
-        .category-options .row {
-            margin-bottom: 10px;
-        }
-        .category-options label {
-            margin-right: 10px;
-        }
-    </style>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-navi fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-navi fixed-top ">
         <div class="container">
             <img class="navbar-logo" src="../Assets/images/logo2.jpg" />
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html" style="color: white">Home</a>
+            <div class="collapse navbar-collapse mx-5" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-around w-100">
+                    <li class="nav-item navbar-search">
+                        <form class="d-flex">
+                            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                        </form>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../about.html" style="color: white">About</a>
+                        <a class="nav-link" href="../index.html" style="color : white">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Pages/form.html" style="color: white">Form</a>
+                        <a class="nav-link" href="../about.html" style="color: white;">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Pages/contact.html" style="color: white">Contact</a>
+                        <a class="nav-link" href="./form.html" style="color: white;">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html" style="color: white;">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <form class="card" id="registrationForm">
-        <div class="card-body">
-            <h2>FORM PENDAFTARAN</h2>
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" placeholder="nama lengkap" required >
     
-            <label for="no_hp">No. Telepon:</label>
-            <input type="tel" id="no_hp" name="no_hp" required>
+    <section class="formulir">
+        <div class="cardd" id="registrationForm">
+            <div class="card-body">
+                <h2>FORM PENDAFTARAN</h2>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" placeholder="nama lengkap" required >
+        
+                <label for="no_hp">No. Telepon:</label>
+                <input type="tel" id="no_hp" name="no_hp" required>
+        
+                <label for="alamat">Alamat:</label>
+                <input type="text" id="alamat" name="alamat" required>
     
-            <label for="Alamat">Alamat:</label>
-            <textarea id="Alamat" name="Alamat" required></textarea>
-
-            <div class="category-options">
-                <label>Pilih Paket:</label>
-                <div class="row">
-                    <div class="col-6">
-                        <label>
-                            <input type="checkbox" name="category" value="Seru"> Paket Seru 
-                        </label>
-                    </div>
-                    <div class="col-6">
-                        <label>
-                            <input type="checkbox" name="category" value="Ambis"> Paket Ambis
-                        </label>
+                <div class="category-options">
+                    <label>Pilih Paket:</label>
+                    <div class="formasi">
+                        <div class="">
+                            <label>
+                                <input type="checkbox" name="category" value="Paket Seru"> Paket Seru 
+                            </label>
+                        </div>
+                        <div class="">
+                            <label>
+                                <input type="checkbox" name="category" value="Paket Ambis"> Paket Ambis
+                            </label>
+                        </div>
+                        <div class="">
+                            <label>
+                                <input type="checkbox" name="category" value="PaketBubar"> Paket Bubar 
+                            </label>
+                        </div>
+                        <div class="">
+                            <label>
+                                <input type="checkbox" name="category" value="Solo"> Paket Solo 
+                            </label>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        <label>
-                            <input type="checkbox" name="category" value="Bubar"> Paket Bubar 
-                        </label>
-                    </div>
-                    <div class="col-6">
-                        <label>
-                            <input type="checkbox" name="category" value="Solo"> Paket Solo 
-                        </label>
-                    </div>
-                </div>
+                <input type="submit" onclick="validateForm(event)" value="Submit"> 
             </div>
-            <input type="submit" value="Submit"> 
         </div>
-    </form>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <section>
+        <footer id="footer" class="footer-section">
+          <div class="socials">
+            <a href="./index.html">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="./index.html">
+              <i data-feather="mail"></i>
+            </a>
+          </div>
+      
+          <div class="links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./Pages/form.html">Form</a>
+            <a href="./Pages/contact.html">Contact</a>
+          </div>
+      
+          <div class="credit">
+            <p>Created By <a href="">@kelompok_C4</a> | &copy; 2024.</p>
+          </div>
+        </footer>
+      </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../Assets/scripts/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        feather.replace();
+      </script>
 </body>
 </html>

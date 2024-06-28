@@ -1,0 +1,50 @@
+.cardd {
+    border-radius: 10px;
+    width: 800px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    background-color:  #add8e6; /* Warna awal latar belakang biru muda */
+    color: #000000; /* Warna teks putih */
+}
+
+.carddd {
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 200px;
+    background-color:  #add8e6; /* Warna awal latar belakang biru muda */
+    color: #000000; /* Warna teks putih */
+}
+
+.formulir{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.map-container {
+    width: 50%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
