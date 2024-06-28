@@ -70,12 +70,23 @@
     margin-bottom: 20px;
 }
 
+/*style untuk section content*/
+.section-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .content {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    width: 100%;
-    height: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .about-img img {
@@ -83,10 +94,19 @@
     margin-right: 20px; 
     margin-bottom: 20px;
     margin-left: 50px;
+    height: auto;
 }
 
 .text-content h2 {
     font-weight: bold; 
+}
+
+/*style untuk section mentor*/
+.section-mentor{
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+    min-height: 100vh;
 }
 
 .card-container {
@@ -96,7 +116,6 @@
     width: 100%;
     justify-content: center;
     padding: 30px;
-
   }
   
   .card {
@@ -115,7 +134,9 @@
   }
   .card img {
     max-width: 100%;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 8px 8px;
+    border-color: #10013b;
+    background-color: #10013b68;
   }
   
   .card h3 {
@@ -124,31 +145,42 @@
   
   .card p {
     margin: 0;
+    color: #0b1e95dc;
   }
 
-  .quotes{
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  /*style untuk quotes*/
+  .section-quotes{
+    background-color: #023d13;
+    display: flex;
     width: 100%;
     height: 100vh;
   }
 
   .card-container-2 {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 600px;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 90px;
+    box-sizing: border-box;
   }
   
   .card-content {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+    background: #a291d168;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90%;
   }
   
   .button {
@@ -308,16 +340,8 @@
     background-color: #4556a0;
 }
 
-
 .formasi{
     display: flex;
     flex-direction: row;
     gap: 4rem;
-}
-
-.section-mentor{
-    background-color: rgb(255, 255, 255);
-    padding: 50px 0;
-    text-align: center;
-    height: 100vh;
 }
