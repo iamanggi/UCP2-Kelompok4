@@ -10,26 +10,25 @@ body {
 }
 
 .navbar {
-  background-color: #10013b; 
+  background-color: #10013b;
   height: 60px;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
-.collapse{
+.collapse {
   margin-left: 4rem;
 }
 
 .navbar-search {
-  margin-right: 10px; 
+  margin-right: 10px;
   margin-left: 90px;
 }
 .navbar-search input {
-  background-color: rgba(255, 255, 255, 0.593); 
+  background-color: rgba(255, 255, 255, 0.593);
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.593);
   padding: 5px 10px;
 }
-
 
 .carousel-item img {
   max-height: 741px; /* Mengatur tinggi maksimum gambar agar sesuai dengan lebar viewport */
@@ -181,7 +180,6 @@ body {
   font-size: 1.3rem;
 }
 
-<<<<<<< HEAD
 /* Root */
 :root {
   --primary: #11023d;
@@ -191,69 +189,63 @@ body {
   background-color: #10013b;
   height: 60px;
   z-index: 1000;
-=======
+  margin-top: 60px;
+}
 
->>>>>>> 88e5fc2c56d2ab18f4ab3a017a52bb4acb919845
+.carousel-item img {
+  max-height: calc(100vh - 60px);
+  object-fit: cover;
+}
 
-  .carousel {
-    margin-top: 60px;
-  }
+/* Footer section */
+.footer-section {
+  background-color: var(--primary);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
 
-  .carousel-item img {
-    max-height: calc(100vh - 60px);
-    object-fit: cover;
-  }
+.footer-section .socials {
+  margin-bottom: 15px;
+}
 
-  /* Footer section */
-  .footer-section {
-    background-color: var(--primary);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
+.footer-section .socials a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
+}
 
-  .footer-section .socials {
-    margin-bottom: 15px;
-  }
+.footer-section .socials a:hover {
+  color: #f39c12; /* Warna hover untuk ikon sosial */
+}
 
-  .footer-section .socials a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 24px;
-    transition: color 0.3s;
-  }
+.footer-section .links {
+  margin-bottom: 15px;
+}
 
-  .footer-section .socials a:hover {
-    color: #f39c12; /* Warna hover untuk ikon sosial */
-  }
+.footer-section .links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-  .footer-section .links {
-    margin-bottom: 15px;
-  }
+.footer-section .links a:hover {
+  color: #f39c12; /* Warna hover untuk link */
+}
 
-  .footer-section .links a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
+.footer-section .credit {
+  margin-top: 10px;
+}
 
-  .footer-section .links a:hover {
-    color: #f39c12; /* Warna hover untuk link */
-  }
+.footer-section .credit a {
+  color: #f39c12; /* Warna link kredit */
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-  .footer-section .credit {
-    margin-top: 10px;
-  }
-
-  .footer-section .credit a {
-    color: #f39c12; /* Warna link kredit */
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
-  .footer-section .credit a:hover {
-    color: white; /* Warna hover untuk link kredit */
-  }
+.footer-section .credit a:hover {
+  color: white; /* Warna hover untuk link kredit */
 }
